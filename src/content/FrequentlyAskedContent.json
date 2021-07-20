@@ -1,0 +1,30 @@
+{
+    "title": "FAQ",
+    "points": [
+      {
+        "title": "What is the current status of the project?",
+        "content": "Currently, we are working on finishing up the rest of the artwork as well as the rest of the programming work."
+      },
+      {
+        "title": "When Cocks?",
+        "content": "We are aiming for a late-July release if not sooner. We will be posting updates and progress within the server under #announcements. "
+      },
+      {
+        "title": "How many cocks will be available upon release?",
+        "content": "There will be 6,666 prized cocks available for purchase."
+      },
+      {
+        "title": "How much are the cocks?",
+        "content": "Each cock will be sold at 0.06 eth."
+      },
+      {
+        "title": "What is the maximum amount of cocks I can mint at a time?",
+        "content": "6"
+      },
+      {
+        "title": "Where can we get a cock?",
+        "content": "Cocks will release on this site, just click the mint button and connect your wallet."
+      }
+    ]
+  }
+  

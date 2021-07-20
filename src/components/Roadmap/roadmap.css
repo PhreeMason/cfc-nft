@@ -1,0 +1,230 @@
+.timeline {
+  background: #fffaf0;
+  padding: 30px 0;
+}
+
+.timeline ul li {
+  background-image: linear-gradient(-45deg, #8d40fb 0%, #5a57fb 100%);
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 2px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 45%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+/*Main content boxes*/
+
+.timeline ul li .box {
+  position: relative;
+  bottom: -9px;
+  width: 400px;
+}
+
+/*Distance from line to right content box*/
+
+.timeline ul li:nth-child(odd) .box {
+  left: 45px;
+}
+
+/*Distance for left content main box*/
+
+.timeline ul li:nth-child(even) .box {
+  left: -439px;
+}
+
+/*Box for left triangle box*/
+
+.timeline ul li:nth-child(even) .box::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent rgb(128, 82, 255);
+}
+
+/*Css for phase text inside the box*/
+
+.timeline h6 {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background-color .5s ease-in-out;
+}
+
+.timeline ul li .box {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) .box {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) .box {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view .box {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* GENERAL MEDIA QUERIES / activates responsive effects when screen is zoomed or on mobile device
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline ul li .box {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) .box {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li .box {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) .box {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) .box::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent rgb(128, 82, 255) transparent transparent;
+  }
+}
+
+.blurry-text {
+  text-shadow: 0 0 10px white;
+  color: transparent;
+}
+
+/* GENERAL MEDIA QUERIES / activates responsive effects when screen is zoomed or on mobile device
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline ul li .box {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) .box {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li .box {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) .box {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) .box::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #34b5bf transparent transparent;
+  }
+}
+
+.timeline .our-services {
+  padding-bottom: 30px;
+  padding: 0 60px;
+  min-height: 198px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: all .4s ease-in-out;
+  box-shadow: 0 0 25px 0 rgba(20, 27, 202, .17);
+}
+
+.timeline .our-services:hover h4, .our-services:hover p {
+  color: #fff
+}
+
+.timeline .our-services h4 {
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline .settings:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #8d40fb 0%, #5a57fb 100%);
+}
+
+.blurry-text {
+  text-shadow: 0 0 10px white;
+  color: transparent;
+}
+
+.timeline .icon {
+  margin-bottom: -21px;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.timeline .icon img {
+  background-image: linear-gradient(-45deg, #8d40fb 0%, #5a57fb 100%);
+  border-radius: 30% 20% 25% 20%;
+  padding: 10px;
+}
+
+.timeline .settings {
+  display: inline-block;
+  position: relative;
+}
+
+.timeline .settings p {
+  padding: 5px 0px;
+}
+
+.timeline .settings:hover {
+  transform: translateX(5px);
+}
+
+.timeline .roadmap-title {
+  background: linear-gradient(-45deg, #8d40fb 0%, #5a57fb 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* .timeline ul li:nth-child(6) .settings:hover {
+  background-image: linear-gradient(-45deg, #27b88d 0%, #22dd73 100%);
+} */

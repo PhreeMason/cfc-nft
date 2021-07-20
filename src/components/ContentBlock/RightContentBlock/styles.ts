@@ -28,14 +28,26 @@ export const ContentWrapper = styled("div")`
 
 export const ButtonWrapper = styled("div")`
   display: flex;
-  justify-content: space-between;
   max-width: 100%;
 
   @media screen and (min-width: 1024px) {
     max-width: 80%;
   }
 
-  button:last-child {
+  div:last-child {
     margin-left: 20px;
+  }
+
+  a {
+    position: relative;
+    transform: translateY(5px);
+
+    &:hover,
+    &:active,
+    &:focus {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+    }
   }
 `;

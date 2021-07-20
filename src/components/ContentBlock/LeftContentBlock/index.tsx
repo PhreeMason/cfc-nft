@@ -19,6 +19,7 @@ const LeftContentBlock = ({
   section,
   t,
   id,
+  contentSize = "lg-font"
 }: ContentBlockProps) => {
   return (
     <LeftContentSection>
@@ -30,7 +31,7 @@ const LeftContentBlock = ({
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
               <h6>{t(title)}</h6>
-              <Content>{t(content)}</Content>
+              <Content className={contentSize}>{(content)}</Content>
               <ServiceWrapper>
                 <Row justify="space-between">
                   {typeof section === "object" &&

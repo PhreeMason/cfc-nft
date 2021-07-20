@@ -1,0 +1,80 @@
+{
+    "title": "Roadmap",
+    "mileStones": [
+        {
+            "text": [
+                [
+                    "The doors to the Cock Fight Club Dojo are opened to owners of Cock Fight Club NFTs. Community Events, Giveaways, Special Airdrops, and more are slated for those who own CFC NFTs."
+                ]
+            ],
+            "img": "dojo.svg"
+        },
+        {
+            "text": [
+                [
+                    "A portion of ETH from the initial sales at launch will be used to establish a community wallet for the Cock Fight Club NFT community. The wallet will also receive 2% of royalties from OpenSea market secondary sales."
+                ]
+            ],
+            "img": "safe.svg"
+        },
+        {
+            "text": [
+                [
+                    "A merchandise store will be available to Cock Fight Club NFT owners. CFC NFT official merch and swag will be available for purchase in addition to customizable goods  using one's own CFC NFT that can be made and purchased as well!"
+                ]
+            ],
+            "img": "tshirt.svg"
+        },
+        {
+            "text": [
+                [
+                    "A game is already in development where you will be able to utilize your NFT in a 1v1 battle. A working version of the game is scheduled to be released within the first 3-weeks where you can test out the strength of your prized cock. FT5 anyone?"
+                ]
+            ],
+            "img": "joystick.svg"
+        },
+        {
+            "text": [
+                [
+                    "MOAR NFTs for Cock Fight Club NFT owners?",
+                    {
+                        "display": "block"
+                    }
+                ],
+                [
+                    " WE GOT THOSE.",
+                    {
+                        "fontWeight": "bold",
+                        "display": "block"
+                    }
+                ],
+                [
+                    " The prized cocks can get a little lonely and sometimes they need time to relax from all that training and fighting. In the very near future, owners will be able to let their cocks visit the special 'Hen House' for which they will receive a special 'Side Chick' that will stroke your prized cock's ego through thick and thin."
+                ]
+            ],
+            "img": "parachute.svg"
+        },
+        {
+            "text": [
+                [
+                    "The first official community contest of the CFC NFT community will be the Most Impressive Cock Beauty Pageant. Owners will show off their cocks to compete for Blue Ribbons and the Special Title of 'Most Impressive Cock'."
+                ]
+            ],
+            "img": "trophy.svg"
+        },
+        {
+            "text": [
+                [
+                    "BONUS:",
+                    {
+                        "fontWeight": "bold"
+                    }
+                ],
+                [
+                    " If you observe closely there is a special attribute that you may want to collect among the CFC NFTs. This is the only hint we will give as owners who obtain the complete set soon after launch will receive a special prize"
+                ]
+            ],
+            "img": "surprise-box.svg"
+        }
+    ]
+}

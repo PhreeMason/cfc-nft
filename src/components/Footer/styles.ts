@@ -40,7 +40,8 @@ export const Extra = styled("section")`
 
 export const LogoContainer = styled("div")`
   display: flex;
-  position: relative;
+  position: absolute;
+  bottom: -25px;
 `;
 
 export const Para = styled("div")`
@@ -88,7 +89,7 @@ export const Empty = styled("div")`
 `;
 
 export const FooterContainer = styled("div")`
-  max-width: 510px;
+  max-width: 210px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -108,9 +109,9 @@ export const FooterContainer = styled("div")`
 
   @media screen and (max-width: 769px) {
     width: auto;
-
-    a:not(:last-child) {
-      display: none;
+    
+    a {
+      padding: 0px 4px;
     }
   }
 

@@ -1,15 +1,10 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+  "title": "Artwork",
+  "text": "First and foremost. The team believed that the artwork is the crux of the NFT itself (there are exceptions of course). The NFT itself needs to be aesthetically pleasing to the owner as well as others. With that in mind, we teamed up with @ FeralMoppet who has over TWENTY YEARS of experience in the art industry.You can see his body of work here https://www.instagram.com/feralmoppet/. Not only has he worked with many major media companies and high end fashion brands, but he has also had successful art exhibitions that had showcased his talent. We hope that you enjoy the artwork of the NFTs as much as the Team does. We think the art is dope af.",
   "section": [
     {
-      "title": "Why Antd?",
+      "title": "Artist Instagram",
       "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
-      "icon": "notes.svg"
-    },
-    {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
       "icon": "notes.svg"
     }
   ]

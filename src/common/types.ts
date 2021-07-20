@@ -18,7 +18,7 @@ export interface SvgIconProps {
 }
 
 export interface InputProps {
-  name: string;
+  name?: string;
   placeholder: string;
   t: any;
   type?: string;

@@ -1,0 +1,53 @@
+p.md-font {
+  font-size: 12px;
+}
+
+body p.lg-font {
+  font-size: 21px;
+}
+
+body .gif-holder {
+  height: 490px;
+  overflow: hidden;
+  width: 490px;
+  border-radius: 8%;
+}
+
+body .mint-gif {
+  position: relative;
+  right: 5px;
+  top: -5px;
+  filter: brightness(0.5);
+  opacity: 0.9;
+  width: 500px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 780px) {
+  body .gif-holder {
+    height: 300px;
+    overflow: hidden;
+    width: 300px;
+    border-radius: 8%;
+  }
+  
+  body .mint-gif {
+    width: 310px;
+  }
+}
+
+.D\(f\) {
+  display: flex;
+}
+
+.Jc\(c\) {
+  justify-content: center;
+}
+
+.Jc\(sb\) {
+  justify-content: space-between;
+}
+
+.Ai\(c\) {
+  align-items: center;
+}

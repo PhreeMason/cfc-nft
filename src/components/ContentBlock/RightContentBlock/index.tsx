@@ -3,6 +3,7 @@ import { withTranslation } from "react-i18next";
 import { SvgIcon } from "../../../common/SvgIcon";
 import { Button } from "../../../common/Button";
 import { ContentBlockProps } from "../types";
+import Socials from "../../Footer/Socials"
 import { Fade } from "react-awesome-reveal";
 import {
   RightBlockContainer,
@@ -18,6 +19,7 @@ const RightBlock = ({
   icon,
   t,
   id,
+  contentSize = "lg-font"
 }: ContentBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
@@ -32,7 +34,7 @@ const RightBlock = ({
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
               <h6>{t(title)}</h6>
-              <Content>{t(content)}</Content>
+              <Content className={contentSize}>{t(content)}</Content>
               <ButtonWrapper>
                 {typeof button === "object" &&
                   button.map((item: any, id: number) => {
@@ -41,12 +43,14 @@ const RightBlock = ({
                         key={id}
                         color={item.color}
                         fixedWidth={true}
-                        onClick={() => scrollTo("about")}
+                        onClick={() => scrollTo("contact")}
                       >
-                        {t(item.title)}
+                        {item.buttonTextColor ?
+                          <span style={{ color: item.buttonTextColor }}>{t(item.title)}</span> : t(item.title)}
                       </Button>
                     );
                   })}
+                  {id=== "intro" && <div className="D(f) Jc(sb) Ai(c)" style={{width: "150px"}}> <Socials /> </div>}
               </ButtonWrapper>
             </ContentWrapper>
           </Col>

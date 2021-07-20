@@ -24,6 +24,8 @@ import {
 interface SocialLinkProps {
   href: string;
   src: string;
+  width?: string;
+  height?: string;
 }
 
 const Footer = ({ t }: any) => {
@@ -31,7 +33,7 @@ const Footer = ({ t }: any) => {
     i18n.changeLanguage(language);
   };
 
-  const SocialLink = ({ href, src }: SocialLinkProps) => {
+  const SocialLink = ({ href, src, width, height }: SocialLinkProps) => {
     return (
       <a
         href={href}
@@ -40,15 +42,15 @@ const Footer = ({ t }: any) => {
         key={src}
         aria-label={src}
       >
-        <SvgIcon src={src} width="25px" height="25px" />
+        <SvgIcon src={src} width={width || "25px"} height={height || "25px"} />
       </a>
     );
   };
 
   return (
     <>
-      <FooterSection>
-        <Container>
+     {/* <FooterSection>
+         <Container>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
               <Language>{t("Contact")}</Language>
@@ -125,7 +127,7 @@ const Footer = ({ t }: any) => {
             </Col>
           </Row>
         </Container>
-      </FooterSection>
+      </FooterSection> */}
       <Extra>
         <Container border={true}>
           <Row
@@ -139,33 +141,31 @@ const Footer = ({ t }: any) => {
                   src="logo.svg"
                   aria-label="homepage"
                   width="101px"
-                  height="64px"
+                  height="101px"
                 />
               </LogoContainer>
             </NavLink>
             <FooterContainer>
               <SocialLink
-                href="https://github.com/Adrinlol/create-react-app-adrinlol"
-                src="github.svg"
+                href="https://discord.gg/eWzZu5nm"
+                src="discord.svg"
+                width="30px"
+                height="30px"
               />
               <SocialLink
-                href="https://twitter.com/Adrinlolx"
-                src="twitter.svg"
+                href="https://twitter.com/CFCNFT"
+                src="twittah.svg"
+                width="30px"
+                height="30px"
               />
               <SocialLink
-                href="https://www.linkedin.com/in/lasha-kakabadze/"
-                src="linkedin.svg"
+                href="https://opensea.io/"
+                src="opensea.svg"
               />
               <SocialLink
-                href="https://medium.com/@lashakakabadze/"
-                src="medium.svg"
+                href="https://www.peta.org/issues/animals-in-entertainment/cruel-sports/cockfighting/"
+                src="Peta.svg"
               />
-              <a href="https://www.buymeacoffee.com/adrinlol">
-                <img
-                  src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=adrinlol&button_colour=FF5F5F&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"
-                  alt="Buy me a pizza"
-                />
-              </a>
             </FooterContainer>
           </Row>
         </Container>

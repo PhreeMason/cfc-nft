@@ -18,16 +18,16 @@ export const Styles = createGlobalStyle`
     body,
     html,
     a {
-        font-family: 'Motiva Sans Light', sans-serif;
+        font-family: Roboto, 'Motiva Sans Light', sans-serif;
+        -webkit-font-smoothing: antialiased;
     }
-
 
     body {
         margin:0;
         padding:0;
         border: 0;
         outline: 0;
-        background: #fff;
+        background: #fffaf0;
         overflow-x: hidden;
     }
 
@@ -58,7 +58,7 @@ export const Styles = createGlobalStyle`
     h5,
     h6 {
         font-family: 'Motiva Sans Bold', serif;
-        color: #18216d;
+        color: #1E1E35;
         font-size: 56px;
         line-height: 1.18;
 
@@ -73,7 +73,7 @@ export const Styles = createGlobalStyle`
 
     p {
         color: #18216d;
-        font-size: 21px;        
+        font-size: 12px;  
         line-height: 1.41;
     }
 
